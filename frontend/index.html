@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="login-screen">
+    <h2>Employee Login</h2>
+    <input type="text" id="empId" placeholder="Employee ID">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login Button</button>
+    <p id="login-error" style="color:red"></p>
+  </div>
+
+  <!-- Screen 2 Dashboard - hidden initially -->
+  <div class="container" id="dashboard-screen" style="display:none">
+    <h2 id="welcome-text">Welcome Employee</h2>
+    <button onclick="showApplyLeave()">Apply Leave Button</button>
+    <button onclick="showLeaveStatus()">View Leave Status Button</button>
+    <button onclick="logout()">Logout Button</button>
+  </div>
+
+  <!-- Screen 3 Apply Leave - hidden initially -->
+  <div class="container" id="apply-screen" style="display:none">
+    <h2>Apply Leave</h2>
+    <input type="text" id="empName" placeholder="Employee Name">
+    <select id="leaveType">
+      <option value="">Leave Type</option>
+      <option>Sick Leave</option>
+      <option>Casual Leave</option>
+    </select>
+    <input type="date" id="fromDate">
+    <input type="date" id="toDate">
+    <textarea id="reason" placeholder="Reason"></textarea>
+    <button onclick="submitLeave()">Submit Button</button>
+    <button onclick="backToDashboard()">Back</button>
+  </div>
+
+  <!-- Screen 4 Leave Status - hidden initially -->
+  <div class="container" id="status-screen" style="display:none">
+    <h2>Leave Status</h2>
+    <table border="1" id="leaveTable">
+      <tr><th>Leave ID</th><th>From Date</th><th>To Date</th><th>Status</th></tr>
+    </table>
+    <button onclick="backToDashboard()">Back</button>
+  </div>
+
+  <!-- Screen 5 Admin Dashboard - hidden initially -->
+  <div class="container" id="admin-screen" style="display:none">
+    <h2>Admin Dashboard</h2>
+    <button onclick="viewRequests()">View Leave Requests</button>
+    <button onclick="approveLeave()">Approve Leave</button>
+    <button onclick="rejectLeave()">Reject Leave</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

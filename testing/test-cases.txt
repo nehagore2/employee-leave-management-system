@@ -1,0 +1,9 @@
+Test Cases for Employee Leave Management System
+
+Test ID | Test Case        | Steps                              | Expected Result                    | Actual Result | Pass/Fail
+TC01    | Employee Login   | 1.Open index.html 2.Enter emp101   | Employee Dashboard with 3 buttons  | Working       | Pass
+TC02    | Admin Login      | 1.Enter admin 2.Enter password     | Admin Dashboard with 4 buttons     | Working       | Pass  
+TC03    | Apply Leave      | 1.Login emp101 2.Apply Leave form  | Alert + data saves in localStorage | Working       | Pass
+TC04    | View Status      | 1.Login emp101 2.View Leave Status | Table shows Pending status         | Working       | Pass
+TC05    | Admin Approve    | 1.Login admin 2.Approve by ID      | Status changes to Approved         | Working       | Pass
+TC06    | Logout           | 1.Click Logout button              | Back to login screen               | Working       | Pass

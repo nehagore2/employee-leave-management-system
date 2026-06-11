@@ -1,0 +1,27 @@
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 0 10px gray;
+}
+input, select, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+button {
+  background: #00ddff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover { background: #00a7b3; }
+table { width: 100%; margin-top: 10px; }
